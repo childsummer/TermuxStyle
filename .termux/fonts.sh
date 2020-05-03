@@ -3,7 +3,8 @@ DIR=`cd $(dirname $0) && pwd`
 FONTS_DIR=$DIR/fonts
 count=0
 
-echo -e "The default font is Ubuntu font.\nYou can choose another one from list below.";
+echo -e "預設地的字體是醜醜的Ubuntu，"
+echo -e "你可以在下面選個好一點的。";
 
 for font in $FONTS_DIR/*/{*.ttf,*.otf}; do
 	font_file[count]=$font;
@@ -13,17 +14,17 @@ done;
 count=$(( $count - 1 ));
 
 while true; do
-	read -p 'Enter a number, leave blank to not to change:' number;
+	read -p '輸入一個號碼，空白就繼續用醜醜的Ubuntu：' number;
 
 	if [[ -z "$number" ]]; then
 		break;
 	elif ! [[ $number =~ ^[0-9]+$ ]]; then
-		echo "Please enter the right number.";
+		echo "別亂來，輸入正確的號碼！";
 	elif (( $number >= 0 && $number <= $count )); then
 		cp -fr "${font_file[number]}" "$DIR/font.ttf";
 		break;
 	else
-		echo "Please enter the right number.";
+		echo "別亂來，輸入正確的號碼！";
 	fi
 done;
 
