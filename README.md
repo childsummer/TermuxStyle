@@ -1,23 +1,30 @@
-# README
+# 讀我
 
-Make your Termux colorful!!
+讓你的Termux更多采多姿！
+介面已經繁體中文化，對臺灣人更方便！
+原本的作者是GitHub上的oh-my-termux，
+然後是由我（yuhuan-afk）中文化的～
 
-## Use：
+## 用法：
 ```shell
-sh -c "$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)"
+git clone https://github.com/yuhuan-afk/TermuxStyle
+cd TermuxStyle
+bash install.sh
 ```
 
-## Set color：
-Run`chcolor`change color, or：
+## 設定配色：
+使用`chcolor`命令更改配色，或者：
 ```shell
 ~/.termux/colors.sh
 ```
+也行
 
-## Set font:
-Run`chfont`change fonts, or：
+## 設定字體:
+使用`chfont`命令更改字體，或者：
 ```shell
 ~/.termux/fonts.sh
 ```
+也行
 
-## Need package：
+## 需要的包：
  - curl
