@@ -3,8 +3,8 @@ DIR=`cd $(dirname $0) && pwd`
 FONTS_DIR=$DIR/fonts
 count=0
 
-echo -e "預設地的字體是醜醜的Ubuntu，"
-echo -e "你可以在下面選個好一點的。";
+echo -e "預設的字體是醜醜的Ubuntu= ="
+echo -e "你可以在下面選個好一點的把他換掉。";
 
 for font in $FONTS_DIR/*/{*.ttf,*.otf}; do
 	font_file[count]=$font;
