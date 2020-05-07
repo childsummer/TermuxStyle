@@ -63,9 +63,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.zsh-s
 echo "source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "$HOME/.zshrc"
 
 chsh -s zsh
+clear
 
 echo "原作者：oh-my-zsh on GitHub，"
-echo "中文化：yuhuan-afk on GitHub。"
+echo "中文化：yuhuan-afk on GitHub，"
+echo "版本號： 1.1 （正式發佈版）。"
 echo ""
 echo "裝好了，做的真棒！"
 echo ""
