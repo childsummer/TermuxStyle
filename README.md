@@ -30,3 +30,6 @@ bash install.sh
 
 ## 需要的包：
  - curl
+
+## 開源協議：
+在[KOSL](https://github.com/yuhuan-afk/KOSL)協議底下開源
