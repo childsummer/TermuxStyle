@@ -19,7 +19,7 @@ while true; do
 	if [[ -z "$number" ]]; then
 		break;
 	elif ! [[ $number =~ ^[0-9]+$ ]]; then
-		echo "別亂來，輸入正確的號碼！";
+		echo "別亂來，輸入正確的號碼！ ";
 	elif (( $number >= 0 && $number <= $count )); then
 		cp -fr "${font_file[number]}" "$DIR/font.ttf";
 		break;
