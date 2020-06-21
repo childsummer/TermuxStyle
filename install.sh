@@ -48,7 +48,6 @@ echo "我還在運作，不用擔心我：）"
 echo "我還在運作，不用擔心我：）"
 echo "我還在運作，不用擔心我：）"
 echo "我還在運作，不用擔心我：）"
-echo "我還在運作，不用擔心我：）"
 
 
 git clone https://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh" --depth 1
